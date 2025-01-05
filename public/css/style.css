@@ -1,0 +1,68 @@
+.arrow
+{
+	background-color	: grey;
+	border				: 1px solid black;
+	border-radius		: 20px;
+	font-size			: xx-large;
+	font-weight			: bold;
+	height				: 10%;
+	width				: 5%;
+	opacity				: 0.5;
+	position			: fixed;
+	text-align			: center;
+	z-index				: 200;
+}
+
+.center
+{
+	margin-left			: auto;
+    margin-right		: auto;
+}
+
+#left
+{
+	bottom				: 0%;
+	right				: 10%;
+}
+
+#up	
+{
+	bottom				: 10%;
+	right				: 5%;
+}
+
+#right
+{
+	bottom				: 0%;
+	right				: 0%;
+}
+
+#down
+{
+	bottom				: 0%;
+	right				: 5%;
+}
+
+#score
+{
+	background-color	: lightgrey;
+	border				: 1px solid black;
+	border-radius		: 20px;
+	height				: 75%;
+	width				: 15%;
+	opacity				: 0.5;
+	position			: fixed;
+	right				: 0px;
+	top					: 0px;
+	text-align			: center;
+	visibility			: hidden;
+	z-index				: 100;
+}
+
+#stage
+{
+	background-color	: black;
+	border				: 0px solid blue;
+	border-radius		: 20px;
+	z-index				: 0;
+}
