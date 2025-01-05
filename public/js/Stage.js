@@ -3,10 +3,10 @@ export default class Stage
 	constructor(stage, id, tileSize)
 	{
 		// Sounds
-		this.MUSIC				= 'snd/pyman_start.wav';
-		this.SOUND_PACDOT		= 'snd/pyman_pacdot.wav';
-		this.SOUND_POWERPELLET	= 'snd/pyman_powerpellet.mp3';
-		this.SOUND_FRUIT		= 'snd/pyman_fruit.wav';
+		this.MUSIC				= 'sounds/pyman_start.wav';
+		this.SOUND_PACDOT		= 'sounds/pyman_pacdot.wav';
+		this.SOUND_POWERPELLET	= 'sounds/pyman_powerpellet.mp3';
+		this.SOUND_FRUIT		= 'sounds/pyman_fruit.wav';
 		
 		// Item colors
 		this.DOTS_COLOR			= 'yellow';

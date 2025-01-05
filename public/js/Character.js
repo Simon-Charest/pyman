@@ -3,9 +3,9 @@ export default class Character
 	constructor(name, color, diameter, i, j)
 	{
 		// Set class constants
-		this.SOUND_BUMP			= 'snd/pyman_bump.wav';
-		this.SOUND_DEATH		= 'snd/pyman_death.wav';
-		this.SOUND_KILL			= 'snd/pyman_kill.wav';
+		this.SOUND_BUMP			= 'sounds/pyman_bump.wav';
+		this.SOUND_DEATH		= 'sounds/pyman_death.wav';
+		this.SOUND_KILL			= 'sounds/pyman_kill.wav';
 		this.STAGE_COLOR_RGB	= new Uint8ClampedArray([0, 0, 255, 255]);
 		this.EYEBALL_COLOR		= 'white';
 		this.PUPIL_COLOR		= 'black';
