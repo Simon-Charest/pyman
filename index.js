@@ -21,15 +21,7 @@ function startServer(app, port) {
 // Configure middleware
 function configureMiddleware(app) {
     // Serve static files from the public directory
-    app.use(express.static(join(process.cwd(), 'public')));
-
-    app.use('/js', express.static(join(process.cwd(), 'public/js'), {
-        setHeaders: (res, path) => {
-            if (path.endsWith('.js')) {
-                res.setHeader('Content-Type', 'application/javascript');
-            }
-        }
-    }));    
+    app.use(express.static(join(process.cwd(), 'public')));  
 }
 
 // Define routes

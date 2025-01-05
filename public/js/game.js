@@ -1,3 +1,4 @@
+import stages from './stages.js';
 import Stage from './Stage.js';
 import Pyman from './Pyman.js';
 import Blinky from './Blinky.js';
