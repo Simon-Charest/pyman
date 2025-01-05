@@ -6,23 +6,22 @@
         <meta name="description" content="Pyman: A free open source JavaScript Pac-Man Battle Royale clone">
         <meta name="keywords" content="Pyman, free, open source, JavaScript, Pac-Man, Battle Royale, clone, arcade, multiplayer">
         <title>Pyman</title>
-        <base href=".">
-        <link rel="icon" href="favicon.ico" sizes="13x13" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="lib/jquery/jquery.min.js"></script>
         <script src="lib/createjs/createjs-combined.js"></script>
-        <script src="js/game.js" type="module"></script>
     </head>
     <body>
-        <canvas id="stage"></canvas>
+        <canvas id="stage" width="800" height="600"></canvas>
         <script type="module">
-            import { init } from './public/js/game.js';
+            console.log("Initializing game...");
+            import * as GameModule from './js/game.js';
             window.onload = init;
         </script>
-        <div class="arrow" id="left" onclick="touch(LEFT);">&larr;</div>
-        <div class="arrow" id="up" onclick="touch(UP);">&uarr;</div>
-        <div class="arrow" id="right" onclick="touch(RIGHT);">&rarr;</div>
-        <div class="arrow" id="down" onclick="touch(DOWN);">&darr;</div>
+        <div class="arrow" id="left" onclick="touch('LEFT');" aria-label="Move left">&larr;</div>
+        <div class="arrow" id="up" onclick="touch('UP');" aria-label="Move up">&uarr;</div>
+        <div class="arrow" id="right" onclick="touch('RIGHT');" aria-label="Move right">&rarr;</div>
+        <div class="arrow" id="down" onclick="touch('DOWN');" aria-label="Move down">&darr;</div>
         <div id="score"></div>
     </body>
 </html>

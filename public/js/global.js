@@ -141,7 +141,7 @@ function showLevelProperties()
 {
 	var temp;
 	
-	for(var s = 0; s < stages.length; s ++)
+	for(var s = 0; s < Object.keys(stages).length; s ++)
 	{
 		temp = new Stage(stages[s], CANVAS);
 		

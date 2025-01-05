@@ -1,7 +1,7 @@
 [
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXX XXXXX XXX",
 			"XXX XXXXX XXX",
 			"XXX XXXXX XXX",
@@ -21,7 +21,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXX XXXXX XXX",
 			"XXX XXXXX XXX",
 			"XXX XXXXX XXX",
@@ -41,7 +41,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXX XXXXX XXXXX",
 			"XXXXX XXXXX XXXXX",
 			"XXX  4.....3  XXX",
@@ -59,7 +59,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXX XXXXX XXXXX",
 			"XXXXX XXXXX XXXXX",
 			"XXXXX XXXXX XXXXX",
@@ -79,7 +79,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXX XXXXX XXXXXXX",
 			"XXX   X XXXXX X   XXX",
 			"XXX X X XXXXX X X XXX",
@@ -99,7 +99,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXX XXXXX XXXXXXXXX",
 			"X       X XXXXX X       X",
 			"X XXXXX X XXXXX X XXXXX X",
@@ -119,7 +119,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXXXXXXXXXX",
 			"X........X........X",
 			"XoXX.XXX.X.XXX.XXoX",
@@ -146,7 +146,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"X         X XXXXX X         X",
 			"X X X X X X XXXXX X X X X X X",
@@ -166,7 +166,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"          X XXXXX X          ",
 			"X XXX XXX X XXXXX X XXX XXX X",
@@ -186,7 +186,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"            XXXXX            ",
 			"X X XXXX XX XXXXX XX XXXX X X",
@@ -206,7 +206,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"XXX   X   X XXXXX X   X   XXX",
 			"XXX X X X X XXXXX X X X X XXX",
@@ -226,7 +226,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"X         X XXXXX X         X",
 			"X XXX XXX X XXXXX X XXX XXX X",
@@ -246,7 +246,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"X   XXXXX   XXXXX   XXXXX   X",
 			"X X XXXXX X XXXXX X XXXXX X X",
@@ -266,7 +266,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"X         X XXXXX X         X",
 			"X XXX XXX X XXXXX X XXX XXX X",
@@ -286,7 +286,7 @@
 	},
 	{
 		"color": "blue",
-		"stage": [
+		"tiles": [
 			"XXXXXXXXXXX XXXXX XXXXXXXXXXX",
 			"XXXXX     X XXXXX X     XXXXX",
 			"XXXXX XXX X XXXXX X XXX XXXXX",

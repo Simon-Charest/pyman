@@ -1,4 +1,3 @@
-import stages from './stages.js';
 import Stage from './Stage.js';
 import Pyman from './Pyman.js';
 import Blinky from './Blinky.js';
@@ -6,19 +5,27 @@ import Pinky from './Pinky.js';
 import Inky from './Inky.js';
 import Clyde from './Clyde.js';
 
-let interval, stage, ghosts, pymen, deadPymen = [], timer = 0;
-
-const SPEED = 30; // Example speed
-const CANVAS = document.getElementById('stage');
-const SIZE = 20; // Example size
+const SPEED = 30; 
 const LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40;
 
-function init() {
-    console.log("Initializing game...");
-    const stageIndex = Math.floor(Math.random() * stages.length);
-    stage = new Stage(stages[stageIndex], CANVAS, SIZE);
+async function init() {
+    console.log("Loading stages data...");
+    const stages = await loadStages();
 
-    stage.play(stage.MUSIC);
+    console.log("Selecting random stage...");
+    const stageIndex = Math.floor(Math.random() * stages.length);
+
+    let stage = stages[stageIndex];
+    let id = "canvas"
+    let tileSize = 20;
+
+    console.log("Loading stage...");
+
+    // @TODO: Dev this
+    stage = new Stage(stage, id, tileSize);
+    //stage.play(stage.MUSIC);
+
+    return;
 
     ghosts = [
         new Blinky('Blinky', 'red', SIZE, stage.ghost[1], stage.ghost[0]),
@@ -35,12 +42,18 @@ function init() {
     interval = setInterval(draw, SPEED);
 }
 
+async function loadStages() {
+    const stages = await fetch('data/stages.json');
+    const json = await stages.json();
+
+    return json;
+}
+
 function draw() {
     stage.draw();
     ghosts.forEach(ghost => ghost.move());
     pymen.forEach(pyman => pyman.move());
 
-    // Additional game logic...
     if (pymen.length === 0) {
         console.log("Game Over!");
         clearInterval(interval);
